@@ -460,6 +460,14 @@ def cargar_datos():
         return json.load(f)
 
 geojson_data = cargar_datos()
+import os
+if os.path.exists("imagenes"):
+    st.write("✅ Carpeta imagenes encontrada:", os.listdir("imagenes"))
+elif os.path.exists("fotos"):
+    st.write("✅ Carpeta fotos encontrada:", os.listdir("fotos"))
+else:
+    st.write("❌ No se encuentra ninguna carpeta de fotos")
+    st.write("📁 Archivos en raíz:", os.listdir("."))
 lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
 
 CARPETA_FOTOS = "imagenes"
@@ -679,3 +687,4 @@ with tab_misiones:
     <div style="height:24px"></div>
     ''', unsafe_allow_html=True)
     
+
