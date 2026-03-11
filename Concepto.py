@@ -317,104 +317,104 @@ st.markdown("""
 
 diccionario_campus = {
     "Nahmias": {
-        "info": "El clásico de clásicos. Aquí tendrás la mayoría de tus ramos masivos y de plan común. Llega temprano porque los pasillos son un laberinto los primeros días.",
+        "info": "El clásico de clásicos. Aquí tendrás la mayoría de tus ramos masivos y de plan común. Llega con tiempo; los pasillos son un verdadero laberinto las primeras semanas.",
         "dato_geo": "El edificio presenta una alta densidad de flujo peatonal. Su orientación ayuda a mitigar los vientos predominantes del norte durante las tormentas invernales de Valdivia.",
-        "tip": "⚠️ El edificio es confuso al principio — busca el número de sala en los paneles de cada piso."
+        "tip": "⚠️ Es fácil perderse al principio. Fíjate bien en la numeración de las salas y ve el letrero de indicaciones que está en el hall central para orientarte."
     },
     "Pugin": {
-        "info": "El corazón de la Facultad de Ciencias. Albergue de laboratorios de biología, química y física. Hay una cafetería en el primer piso.",
+        "info": "El corazón de la Facultad de Ciencias. Albergue de laboratorios y las direcciones de escuela. Hay una cafetería en el primer piso.",
         "dato_geo": "Construido sobre suelos con alta capacidad portante en la terraza fluvial de Isla Teja.",
-        "tip": "☕ La cafetería del primer piso a veces está menos llena que la central."
+        "tip": "☕ La cafetería es algo cara, pero es un buen lugar para tomar un café rápido entre clases si estás cerca."
     },
     "GG": {
-        "info": "¡Tu casa matriz! El Pabellón de Geología y Geografía. Aquí conocerás a tus profes de carrera y organizarás tus primeras salidas a terreno.",
+        "info": "¡Tu casa matriz! El Pabellón de Geología y Geografía. Aquí tendras tus primeras clases de Geografía, y es un buen punto de referencia para orientarte en el campus.",
         "dato_geo": "Punto estratégico. En sus alrededores se realizan las primeras prácticas de levantamiento topográfico y calibración de equipos GNSS.",
-        "tip": "🗺️ El mural de la entrada es una buena referencia para orientarte en el campus."
+        "tip": "🗺️ La Tía Ida es sagrada, salúdala siempre; es un amor y te salvará del hambre con sus pies y galletas a buen precio. Un secreto vital: cuida el edificio, porque tiene los mejores baños de toda la U."
     },
     "Salita SIG": {
-        "info": "El búnker de la carrera. El laboratorio donde ocurre toda la magia de la teledetección, la cartografía y el modelamiento espacial. Pasarás muchas horas aquí.",
+        "info": "El búnker de la carrera. Puedes venir a estudiar, usar los computadores y calentar tu comida. Es un espacio pequeño pero acogedor.",
         "dato_geo": "Centro de procesamiento de alto rendimiento. Aquí transformamos imágenes satelitales crudas en Modelos Digitales de Elevación y análisis de riesgos.",
-        "tip": "💾 Siempre guarda tu trabajo en tu pendrive — los computadores se reinician solos."
+        "tip": "💾 ¡Ojo con la llave! Si eres el último en irte, recuerda siempre devolverla. La salita es muy cotizada a toda hora por profes y compañeros, y nadie quiere quedarse afuera esperando."
     },
     "Biblio": {
-        "info": "Tu principal refugio para estudiar en silencio, sacar libros físicos o usar las salas de estudio grupal (¡resérvalas con tiempo!).",
+        "info": "Tu principal refugio para estudiar en silencio, sacar libros físicos o usar las salas de estudio grupal (¡llega con tiempo!).",
         "dato_geo": "Diseño arquitectónico con gran aprovechamiento de la luz natural, minimizando la huella de carbono por iluminación artificial.",
-        "tip": "📅 Las salas grupales se agotan rápido en época de pruebas. Resérvalas con días de anticipación."
+        "tip": "📅 Sin tu TUI no pasas los torniquetes, así que no la dejes en la casa. Además, en semanas de pruebas siempre esta lleno"
     },
     "DAE": {
         "info": "Dirección de Asuntos Estudiantiles. Ven aquí para tramitar tu TNE (Pase Escolar), temas de becas, salud y beneficios.",
         "dato_geo": "Nodo administrativo central. Su ubicación minimiza la 'distancia de fricción' promedio desde cualquier punto del campus.",
-        "tip": "🪪 Trae tu cédula y certificado de alumno regular para tramitar la TNE."
+        "tip": "🪪 Jessika Bastías es la asistente social de nuestra carrera, un contacto clave para tus beneficios. Y ojo con la TNE: atento con las fechas de la foto o revalidación, porque el trámite colapsa súper rápido."
     },
     "Paradero": {
         "info": "El portal de conexión con el resto de Valdivia. Aquí tomas las micros de vuelta al centro o a tu casa después de clases.",
         "dato_geo": "Punto de máxima convergencia en la red de transporte intraurbano. Nodo crítico en la isócrona de accesibilidad del campus.",
-        "tip": "🚌 Después de las 18:00 se llena. La micro 3 y 7 pasan con más frecuencia."
+        "tip": "🚌 Después de las 17:00 se llena. La micro 20, 9 y 4 pasan con más frecuencia."
     },
     "Cafeteria Central": {
         "info": "El punto de encuentro principal para almorzar o tomar un café entre ventanas.",
         "dato_geo": "Zona de alta concentración de calor antrópico al mediodía.",
-        "tip": "🕐 Entre 12:30 y 13:30 es un caos. Almuerza a las 12:00 o después de las 14:00."
+        "tip": "🕐 Entre 12:30 y 13:30 es un caos."
     },
     "Cafeteria Forestal": {
         "info": "Ideal si andas cerca del sector botánico/forestal.",
         "dato_geo": "Rodeada de una alta densidad de biomasa que regula la temperatura local.",
-        "tip": "🌿 Más tranquila y con buena vista. Vale el caminado extra."
+        "tip": "🌿 Por lejos la mejor cafetería de la U. Cumple con la regla de oro de las 3 B (buena, bonita y barata) y tiene, indiscutiblemente, las mejores empanadas de todo el campus. Vale cada paso de la caminata hasta acá."
     },
     "Cafeteria Humanidade": {
         "info": "Un ambiente más bohemio y relajado en el sector de humanidades.",
         "dato_geo": "Ubicada en el sector de menor pendiente del área oeste del campus.",
-        "tip": "📚 Buen ambiente para estudiar mientras comes."
+        "tip": "📚 Un poco más cara y con menos variedad que el resto, pero es el salvavidas oficial si tienes clases en el sector de Humanidades y no quieres caminar hasta el centro por un café."
     },
     "Cafeteria Vete": {
-        "info": "Punto de recarga estratégico cerca de las facultades del fondo.",
+        "info": "Punto de recarga estratégico cerca del PC.",
         "dato_geo": "Sector con alta permeabilidad de suelos en sus alrededores.",
-        "tip": "🐄 Te encontrarás con estudiantes de veterinaria y agronomía. Buena onda generalmente."
+        "tip": "🐄 Es la segunda mejor cafetería de la UACh y la reina indiscutida de los completos. Es el plan B perfecto si tienes clases en el PC  y la Forestal está colapsada."
     },
     "Arqui": {
-        "info": "La cafetería de Arquitectura. Excelente diseño y buenos cafés.",
+        "info": "La cafetería de Arquitectura. Excelente diseño y buenas sopaipillas.",
         "dato_geo": "Estructura que maximiza la eficiencia espacial del entorno construido.",
-        "tip": "☕ Uno de los mejores cafés del campus. Vale la pena aunque quede lejos."
+        "tip": "☕ Es cercana al GG. El pugin es mas caro, Arqui esta cerca y tiene las mejores sopaipillas."
     },
     "GYM": {
         "info": "Gimnasio de la UACh. Para tus ramos de deportes o si quieres entrenar en tu tiempo libre.",
         "dato_geo": "Infraestructura de gran volumen que genera una 'isla de calor' microscópica controlada.",
-        "tip": "🏋️ Los ramos de deportes son obligatorios los primeros semestres. Inscríbete temprano."
+        "tip": "🏋️ Si quieres una hora para el gimnasio, tienes que venir a consultar bien temprano porque los cupos vuelan."
     },
     "Registro Academico": {
         "info": "Donde gestionas tus certificados de alumno regular y concentración de notas.",
         "dato_geo": "Punto de gestión de flujos de información del estudiantado.",
-        "tip": "📄 Puedes solicitar certificados online desde el portal — ahorra el viaje."
+        "tip": "📄 Ven aquí a retirar tu TUI, pero ojo: solo podrás hacerlo si ya subiste tu foto al portal de InfoAlumnos. Hazlo apenas puedas para evitar quedarte fuera de la biblioteca."
     },
     "PD": {
         "info": "Pabellón Docente. Aulas clásicas para clases teóricas de diversas facultades.",
         "dato_geo": "Edificación estandarizada para maximizar la capacidad de aforo por metro cuadrado.",
-        "tip": "🔑 Algunas salas quedan con llave. Si es el caso, pregunta en secretaría."
+        "tip": "🔑 La distribución de las salas puede parecer un laberinto al principio, pero la clave está en el hall central: ahí hay letreros que te indican hacia qué pasillo correr según tu número de sala. Una vez en el pasillo, chequea siempre el número arriba de cada puerta antes de entrar."
     },
     "PC": {
         "info": "Pabellón Federico Saelzer. Usualmente ocupado por ciencias agrarias o forestales.",
         "dato_geo": "Colindante a áreas de experimentación fenológica.",
-        "tip": "🌱 Los jardines cercanos son lindos para descansar entre clases."
+        "tip": "🌱 Tienes los jardines más tranquilos para relajarte y la suerte de estar cerca de la Cafetería Forestal."
     },
     "PA": {
-        "info": "Pabellón de Producción Animal. Clases específicas de veterinaria y agronomía.",
+        "info": "Pabellón de Producción Animal. Usado por veterinaria y agronomía.",
         "dato_geo": "Conectividad directa con los predios de uso silvoagropecuario del campus.",
-        "tip": "🐾 Puede haber animales en los alrededores — es completamente normal."
+        "tip": "🐾 Es el mas alejado ademas de ser el mas enredado para llegar a el."
     },
     "Instapanel": {
         "info": "Laboratorios específicos y talleres técnicos.",
         "dato_geo": "Estructura de material ligero con rápida respuesta térmica ante la radiación solar.",
-        "tip": "🛠️ Los laboratorios tienen horarios específicos — revisa tu horario con anticipación."
+        "tip": "🛠️ Aquí se concentran los laboratorios de los profes y varias de sus oficinas. Si te toca participar en un proyecto de investigación o buscas a un docente para una tutoría, es muy probable que este sea tu punto de encuentro."
     },
     "Cidfil": {
-        "info": "Pabellón de clases del sector sur del campus. Aquí encontrarás aulas para ramos de distintas facultades. Revisa bien tu horario para no confundirte de edificio.",
+        "info": "Pabellón de clases del sector norte del campus. Aquí encontrarás aulas para ramos de distintas facultades.",
         "dato_geo": "Su posición en el campus genera un corredor peatonal que conecta el sector académico sur con los servicios centrales de Isla Teja.",
-        "tip": "🧭 Si es tu primera vez yendo, dale 5 minutos extra — queda un poco más alejado del núcleo central."
+        "tip": "🧭 Es, indiscutiblemente, el edificio más remoto de la universidad. Su diseño es inconfundible porque literalmente parece un cajón de frutas de madera."
     },
     "Fame": {
-        "info": "Casino Fame, uno de los puntos de alimentación del campus. Buena opción para almorzar si la Cafetería Central está muy llena o queda lejos de tus clases.",
+        "info": "Casino Fame, uno de los puntos de alimentación del campus.",
         "dato_geo": "Nodo secundario en la red de servicios de alimentación del campus, alivia la presión sobre el casino central durante las horas punta.",
-        "tip": "🍽️ Menos conocido por los mechones, así que suele estar más tranquilo a la hora de almuerzo."
+        "tip": "🍽️ Si te gustaron las empanadas de la Forestal, esta es tu salvación porque es la misma concesión. Queda un poco lejos"
     }
 }
 
@@ -459,10 +459,13 @@ def cargar_datos():
     with open('Edificios.geojson', 'r', encoding='utf-8') as f:
         return json.load(f)
 
+
 geojson_data = cargar_datos()
-lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
+lista_edificios = sorted([f['properties']['alias']
+                         for f in geojson_data['features']])
 
 CARPETA_FOTOS = "fotos"
+
 
 def buscar_foto(alias):
     """Busca foto del edificio ignorando mayúsculas en la extensión."""
@@ -473,6 +476,7 @@ def buscar_foto(alias):
         if nombre == alias and ext.lower() in ('jpg', 'jpeg', 'png', 'webp'):
             return os.path.join(CARPETA_FOTOS, archivo)
     return None
+
 
 def foto_a_html(path):
     """Convierte una foto local a un <img> base64 embebido en HTML."""
@@ -562,7 +566,7 @@ with tab_mapa:
 
     if map_data and map_data.get("last_active_drawing"):
         props = map_data["last_active_drawing"]["properties"]
-        alias_sel    = props["alias"]
+        alias_sel = props["alias"]
         tipo_uso_sel = props.get("tipo_uso", "").strip()
     elif edificio_buscado != "Selecciona un lugar...":
         alias_sel = edificio_buscado
@@ -573,11 +577,11 @@ with tab_mapa:
 
     # ── Info card ─────────────────────────────────────────────────────────────
     if alias_sel:
-        datos  = diccionario_campus.get(alias_sel, {})
-        icono  = iconos_uso.get(tipo_uso_sel, "📍")
-        info   = datos.get("info",     "Información en construcción.")
-        geo    = datos.get("dato_geo", "Dato en levantamiento topográfico.")
-        tip    = datos.get("tip",      None)
+        datos = diccionario_campus.get(alias_sel, {})
+        icono = iconos_uso.get(tipo_uso_sel, "📍")
+        info = datos.get("info",     "Información en construcción.")
+        geo = datos.get("dato_geo", "Dato en levantamiento topográfico.")
+        tip = datos.get("tip",      None)
 
         foto_path = buscar_foto(alias_sel)
 
@@ -650,7 +654,8 @@ with tab_mapa:
 
 with tab_misiones:
     st.markdown('<div style="height:12px"></div>', unsafe_allow_html=True)
-    st.markdown('<div class="misiones-title">🎯 Tus primeras misiones</div>', unsafe_allow_html=True)
+    st.markdown('<div class="misiones-title">🎯 Tus primeras misiones</div>',
+                unsafe_allow_html=True)
     st.markdown('''
     <div style="padding:4px 16px 12px; font-size:13px; color:#6b7280; font-family:'DM Sans',sans-serif; line-height:1.5;">
         Estas son las cosas que <strong style="color:#9ca3af">DEBES</strong> hacer la primera semana/mes para no quedar perdido.
@@ -674,9 +679,9 @@ with tab_misiones:
         <div style="font-size:10px; color:#4b5563; text-transform:uppercase; letter-spacing:1px;
                     font-family:'DM Sans',sans-serif; margin-bottom:6px;">REGLA DE ORO</div>
         <div style="font-size:13px; color:#86efac; font-family:'DM Sans',sans-serif; line-height:1.6;">
-            🌧️ <strong style="color:#bbf7d0">Compra ropa de lluvia.</strong>
-            Valdivia es la ciudad más lluviosa de Chile y el campus no tiene techos entre edificios.
-            Aprenderás a la mala si no lo haces.
+            🌧️ <strong style="color:#bbf7d0">Invierte en una buena chaqueta impermeable o cortavientos.</strong>
+           Valdivia no perdona, y el campus no tiene techos entre los edificios. Los paraguas aquí no sirven de nada, 
+           mueren al primer temporal de viento. Aprenderás a la mala si andas desabrigado.
         </div>
     </div>
     <div style="height:24px"></div>
