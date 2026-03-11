@@ -460,15 +460,15 @@ def cargar_datos():
         return json.load(f)
 
 geojson_data = cargar_datos()
+lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
+
+# ── DIAGNÓSTICO TEMPORAL ──
 test_alias = "GG"
 resultado = buscar_foto(test_alias)
 st.write(f"Buscando foto de {test_alias}:", resultado)
-
-# Ver exactamente qué hay en la carpeta
 for archivo in os.listdir("fotos"):
     nombre, _, ext = archivo.rpartition('.')
     st.write(f"archivo='{archivo}' | nombre='{nombre}' | ext='{ext}' | coincide={nombre == test_alias}")
-lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
 
 CARPETA_FOTOS = "imagenes"
 
@@ -689,5 +689,6 @@ with tab_misiones:
     </div>
     <div style="height:24px"></div>
     ''', unsafe_allow_html=True)
+
 
 
