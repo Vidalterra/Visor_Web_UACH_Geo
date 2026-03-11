@@ -462,15 +462,7 @@ def cargar_datos():
 geojson_data = cargar_datos()
 lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
 
-# ── DIAGNÓSTICO TEMPORAL ──
-test_alias = "GG"
-resultado = buscar_foto(test_alias)
-st.write(f"Buscando foto de {test_alias}:", resultado)
-for archivo in os.listdir("fotos"):
-    nombre, _, ext = archivo.rpartition('.')
-    st.write(f"archivo='{archivo}' | nombre='{nombre}' | ext='{ext}' | coincide={nombre == test_alias}")
-
-CARPETA_FOTOS = "imagenes"
+CARPETA_FOTOS = "fotos"
 
 def buscar_foto(alias):
     """Busca foto del edificio ignorando mayúsculas en la extensión."""
@@ -489,6 +481,14 @@ def foto_a_html(path):
     with open(path, 'rb') as f:
         b64 = base64.b64encode(f.read()).decode()
     return f'<img src="data:{mime};base64,{b64}" style="width:100%;max-height:260px;object-fit:contain;display:block;background:#0f1117;">'
+
+# ── DIAGNÓSTICO TEMPORAL ── borrar después
+test_alias = "GG"
+resultado = buscar_foto(test_alias)
+st.write(f"Buscando foto de {test_alias}:", resultado)
+for archivo in os.listdir("fotos"):
+    nombre, _, ext = archivo.rpartition('.')
+    st.write(f"archivo='{archivo}' | nombre='{nombre}' | ext='{ext}' | coincide={nombre == test_alias}")
 
 
 # ─── HEADER ──────────────────────────────────────────────────────────────────
@@ -689,6 +689,4 @@ with tab_misiones:
     </div>
     <div style="height:24px"></div>
     ''', unsafe_allow_html=True)
-
-
 
