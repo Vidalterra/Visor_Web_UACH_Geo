@@ -459,22 +459,17 @@ def cargar_datos():
     with open('Edificios.geojson', 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
 geojson_data = cargar_datos()
-lista_edificios = sorted([f['properties']['alias']
-                         for f in geojson_data['features']])
+lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
 
-# Guarda fotos como fotos/GG.jpg, fotos/Nahmias.png, etc.
-CARPETA_FOTOS = "fotos"
-
+CARPETA_FOTOS = "imagenes"
 
 def buscar_foto(alias):
-    for ext in ['jpg', 'jpeg', 'png', 'webp']:
+    for ext in ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG', 'WEBP']:
         path = os.path.join(CARPETA_FOTOS, f"{alias}.{ext}")
         if os.path.exists(path):
             return path
     return None
-
 
 def foto_a_html(path):
     """Convierte una foto local a un <img> base64 embebido en HTML."""
@@ -564,7 +559,7 @@ with tab_mapa:
 
     if map_data and map_data.get("last_active_drawing"):
         props = map_data["last_active_drawing"]["properties"]
-        alias_sel = props["alias"]
+        alias_sel    = props["alias"]
         tipo_uso_sel = props.get("tipo_uso", "").strip()
     elif edificio_buscado != "Selecciona un lugar...":
         alias_sel = edificio_buscado
@@ -575,11 +570,11 @@ with tab_mapa:
 
     # ── Info card ─────────────────────────────────────────────────────────────
     if alias_sel:
-        datos = diccionario_campus.get(alias_sel, {})
-        icono = iconos_uso.get(tipo_uso_sel, "📍")
-        info = datos.get("info",     "Información en construcción.")
-        geo = datos.get("dato_geo", "Dato en levantamiento topográfico.")
-        tip = datos.get("tip",      None)
+        datos  = diccionario_campus.get(alias_sel, {})
+        icono  = iconos_uso.get(tipo_uso_sel, "📍")
+        info   = datos.get("info",     "Información en construcción.")
+        geo    = datos.get("dato_geo", "Dato en levantamiento topográfico.")
+        tip    = datos.get("tip",      None)
 
         foto_path = buscar_foto(alias_sel)
 
@@ -652,8 +647,7 @@ with tab_mapa:
 
 with tab_misiones:
     st.markdown('<div style="height:12px"></div>', unsafe_allow_html=True)
-    st.markdown('<div class="misiones-title">🎯 Tus primeras misiones</div>',
-                unsafe_allow_html=True)
+    st.markdown('<div class="misiones-title">🎯 Tus primeras misiones</div>', unsafe_allow_html=True)
     st.markdown('''
     <div style="padding:4px 16px 12px; font-size:13px; color:#6b7280; font-family:'DM Sans',sans-serif; line-height:1.5;">
         Estas son las cosas que <strong style="color:#9ca3af">DEBES</strong> hacer la primera semana/mes para no quedar perdido.
@@ -684,3 +678,4 @@ with tab_misiones:
     </div>
     <div style="height:24px"></div>
     ''', unsafe_allow_html=True)
+    
