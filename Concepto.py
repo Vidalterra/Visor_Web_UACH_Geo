@@ -460,23 +460,18 @@ def cargar_datos():
         return json.load(f)
 
 geojson_data = cargar_datos()
-import os
-if os.path.exists("imagenes"):
-    st.write("✅ Carpeta imagenes encontrada:", os.listdir("imagenes"))
-elif os.path.exists("fotos"):
-    st.write("✅ Carpeta fotos encontrada:", os.listdir("fotos"))
-else:
-    st.write("❌ No se encuentra ninguna carpeta de fotos")
-    st.write("📁 Archivos en raíz:", os.listdir("."))
 lista_edificios = sorted([f['properties']['alias'] for f in geojson_data['features']])
 
 CARPETA_FOTOS = "imagenes"
 
 def buscar_foto(alias):
-    for ext in ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG', 'WEBP']:
-        path = os.path.join(CARPETA_FOTOS, f"{alias}.{ext}")
-        if os.path.exists(path):
-            return path
+    """Busca foto del edificio ignorando mayúsculas en la extensión."""
+    if not os.path.exists(CARPETA_FOTOS):
+        return None
+    for archivo in os.listdir(CARPETA_FOTOS):
+        nombre, _, ext = archivo.rpartition('.')
+        if nombre == alias and ext.lower() in ('jpg', 'jpeg', 'png', 'webp'):
+            return os.path.join(CARPETA_FOTOS, archivo)
     return None
 
 def foto_a_html(path):
@@ -686,5 +681,4 @@ with tab_misiones:
     </div>
     <div style="height:24px"></div>
     ''', unsafe_allow_html=True)
-    
 
